@@ -6,9 +6,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/olivere/elastic/v7"
 	"github.com/sirupsen/logrus"
-
-	"github.com/olivere/elastic"
 )
 
 var (

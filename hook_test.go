@@ -11,7 +11,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/olivere/elastic"
+	"github.com/olivere/elastic/v7"
 	"github.com/sirupsen/logrus"
 
 	"reflect"
@@ -78,8 +78,8 @@ func hookTest(hookfunc NewHookFunc, indexName string, t *testing.T) {
 		Query(termQuery).
 		Do(context.TODO())
 
-	if searchResult.Hits.TotalHits != int64(samples) {
-		t.Errorf("Not all logs pushed to elastic: expected %d got %d", samples, searchResult.Hits.TotalHits)
+	if searchResult.Hits.TotalHits.Value != int64(samples) {
+		t.Errorf("Not all logs pushed to elastic: expected %d got %d", samples, searchResult.Hits.TotalHits.Value)
 		t.FailNow()
 	}
 }
@@ -117,7 +117,7 @@ func TestError(t *testing.T) {
 		Query(termQuery).
 		Do(context.TODO())
 
-	if !(searchResult.Hits.TotalHits >= 1) {
+	if !(searchResult.Hits.TotalHits.Value >= 1) {
 		t.Error("No log created")
 		t.FailNow()
 	}
