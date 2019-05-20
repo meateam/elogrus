@@ -3,20 +3,22 @@
 
 Elasticsearch version | Elastic version | Package URL
 ----------------------|------------------|------------
-6.x                   | 6.0              | [`gopkg.in/sohlich/elogrus.v3`](http://gopkg.in/sohlich/elogrus.v3)
-5.x                   | 5.0              | [`gopkg.in/sohlich/elogrus.v2`](http://gopkg.in/sohlich/elogrus.v2)
-2.x                   | 3.0              | [`gopkg.in/sohlich/elogrus.v1`](http://gopkg.in/sohlich/elogrus.v1)
+7.x                   | 7.0              | [`github.com/meateam/elogrus.v4`](http://github.com/meateam/elogrus.v4)
+6.x                   | 6.0              | [`github.com/meateam/elogrus.v3`](http://github.com/meateam/elogrus.v3)
+5.x                   | 5.0              | [`github.com/meateam/elogrus.v2`](http://github.com/meateam/elogrus.v2)
+2.x                   | 3.0              | [`github.com/meateam/elogrus.v1`](http://github.com/meateam/elogrus.v1)
 
 
 ## Changelog
-- elastic 6.x support (currently in master)
+- elastic 7.x support (currently in master)
+- elastic 6.x support (in v3)
 - v2.1 - Added support for async hook
 
 
 ## Import
 
 ```
-go get gopkg.in/sohlich/elogrus.v3
+go get github.com/meateam/elogrus.v4
 ```
 
 ## Usage
@@ -25,8 +27,8 @@ go get gopkg.in/sohlich/elogrus.v3
 package main
 
 import (
-	"github.com/sirupsen/logrus.v3"
-	"gopkg.in/sohlich/elogrus"
+	"github.com/sirupsen/logrus"
+	"github.com/meateam/elogrus"
 	"gopkg.in/olivere/elastic"
 )
 
