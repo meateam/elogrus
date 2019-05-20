@@ -17,7 +17,7 @@ import (
 	"reflect"
 )
 
-//docker run -it --rm -p 7777:9200 -p 5601:5601 elasticsearch:alpine
+// docker run --rm -p 7777:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.0.1
 
 type NewHookFunc func(client *elastic.Client, host string, level logrus.Level, index string) (*ElasticHook, error)
 

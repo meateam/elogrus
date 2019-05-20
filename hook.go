@@ -33,7 +33,7 @@ type ElasticHook struct {
 }
 
 // NewElasticHook creates new hook
-// client - ElasticSearch client using gopkg.in/olivere/elastic.v5
+// client - ElasticSearch client
 // host - host of system
 // level - log level
 // index - name of the index in ElasticSearch
@@ -42,7 +42,7 @@ func NewElasticHook(client *elastic.Client, host string, level logrus.Level, ind
 }
 
 // NewAsyncElasticHook creates new  hook with asynchronous log
-// client - ElasticSearch client using gopkg.in/olivere/elastic.v5
+// client - ElasticSearch client
 // host - host of system
 // level - log level
 // index - name of the index in ElasticSearch
@@ -53,7 +53,7 @@ func NewAsyncElasticHook(client *elastic.Client, host string, level logrus.Level
 // NewElasticHookWithFunc creates new hook with
 // function that provides the index name. This is useful if the index name is
 // somehow dynamic especially based on time.
-// client - ElasticSearch client using gopkg.in/olivere/elastic.v5
+// client - ElasticSearch client
 // host - host of system
 // level - log level
 // indexFunc - function providing the name of index
@@ -64,7 +64,7 @@ func NewElasticHookWithFunc(client *elastic.Client, host string, level logrus.Le
 // NewAsyncElasticHookWithFunc creates new asynchronous hook with
 // function that provides the index name. This is useful if the index name is
 // somehow dynamic especially based on time.
-// client - ElasticSearch client using gopkg.in/olivere/elastic.v5
+// client - ElasticSearch client
 // host - host of system
 // level - log level
 // indexFunc - function providing the name of index
