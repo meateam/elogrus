@@ -3,7 +3,7 @@
 
 Elasticsearch version | Elastic version | Package URL
 ----------------------|------------------|------------
-7.x                   | 7.0              | [`github.com/meateam/elogrus.v4`](http://github.com/meateam/elogrus.v4)
+7.x                   | 7.0              | [`github.com/meateam/elogrus/v4`](http://github.com/meateam/elogrus/tree/v4)
 6.x                   | 6.0              | [`github.com/meateam/elogrus.v3`](http://github.com/meateam/elogrus.v3)
 5.x                   | 5.0              | [`github.com/meateam/elogrus.v2`](http://github.com/meateam/elogrus.v2)
 2.x                   | 3.0              | [`github.com/meateam/elogrus.v1`](http://github.com/meateam/elogrus.v1)
@@ -18,7 +18,7 @@ Elasticsearch version | Elastic version | Package URL
 ## Import
 
 ```
-go get github.com/meateam/elogrus.v4
+go get github.com/meateam/elogrus/v4
 ```
 
 ## Usage
@@ -28,8 +28,8 @@ package main
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/meateam/elogrus"
-	"gopkg.in/olivere/elastic"
+	"github.com/meateam/elogrus/v4"
+	"github.com/olivere/elastic/v7"
 )
 
 
