@@ -1,4 +1,4 @@
-module github.com/meateam/logrus
+module github.com/meateam/elogrus
 
 go 1.12
 
